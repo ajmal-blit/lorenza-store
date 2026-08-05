@@ -33,7 +33,10 @@ const firebaseConfig = {
 const AUTHORIZED_ADMIN_EMAILS = [
     "admin@lorenza.com",
     "ntajmal18@gmail.com",
+    "lorenzastartup@gmail.comm",
     "lorenza-startup@gmail.com"
+    "lorenza-startup@gmail.comm"
+    "lorenzastartup@gmail.com"
 ];
 
 // Initialize Services
