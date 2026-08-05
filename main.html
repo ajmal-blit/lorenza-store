@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorenza | Premium Shopping Destination</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Montserrat:wght@900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Minimalist Text Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <h1 class="loader-logo">LORENZA</h1>
+            <p class="loader-tagline">Craftsmanship & Luxury</p>
+            <div class="loader-bar"><div class="loader-progress"></div></div>
+        </div>
+    </div>
+
+    <!-- Wavy Background Overlay -->
+    <div class="bg-pattern"></div>
+
+    <!-- Glassmorphic Nav Bar -->
+    <div class="nav-bar">
+        <div class="logo">
+            <img src="Assets/logo.png" alt="Lorenza Logo">
+            <h4 class="head-nav-bar">Lorenza</h4>
+        </div>
+        
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <ul id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#craftsmanship">Craftsmanship</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button id="open-admin-btn" class="nav-admin-btn"><i class="fa-solid fa-lock"></i> Admin</button></li>
+        </ul>
+    </div>
+
+    <!-- 1. Hero Section -->
+    <section class="hero reveal" id="home">
+        <p class="kicker">Introducing</p>
+        
+        <h1 class="brand-display">
+            <span>LO</span>
+            <span>REN</span>
+            <span>ZA</span>
+        </h1>
+
+        <p class="tagline">Your Premium Shopping Destination.</p>
+        
+        <div class="hero-actions">
+            <a href="#products" class="btn btn-primary">Shop New Arrivals <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#reviews" class="btn btn-secondary">Client Feedback</a>
+        </div>
+    </section>
+
+    <!-- Press Banner -->
+    <section class="press-strip reveal">
+        <p class="press-title">AS FEATURED IN</p>
+        <div class="press-logos">
+            <span>VOGUE</span>
+            <span>GQ</span>
+            <span>HARPER'S BAZAAR</span>
+            <span>ELLE</span>
+            <span>ARCHITECTURAL DIGEST</span>
+        </div>
+    </section>
+
+    <!-- 2. Featured Products Section -->
+    <section class="products-section reveal" id="products">
+        <div class="section-header">
+            <h2>Curated Collection</h2>
+            <p>Handcrafted quality and modern luxury delivered straight to your door.</p>
+        </div>
+
+        <!-- Dynamic Product Grid -->
+        <div class="product-grid" id="product-grid"></div>
+    </section>
+
+    <!-- 3. Craftsmanship Spotlight Section -->
+    <section class="craft-section reveal" id="craftsmanship">
+        <div class="craft-grid">
+            <div class="craft-card glass-card">
+                <i class="fa-solid fa-gem craft-icon"></i>
+                <h3>Hand-Selected Materials</h3>
+                <p>Every piece originates from top-tier full-grain Tuscan leather, sapphire crystal glass, and aerospace-grade acoustics.</p>
+            </div>
+            <div class="craft-card glass-card">
+                <i class="fa-solid fa-compass-drafting craft-icon"></i>
+                <h3>Precision Engineering</h3>
+                <p>Designed with exact tolerances. Our chronographs and audio equipment undergo over 120 hours of manual testing.</p>
+            </div>
+            <div class="craft-card glass-card">
+                <i class="fa-solid fa-award craft-icon"></i>
+                <h3>Lifetime Guarantee</h3>
+                <p>We stand behind the timeless durability of our goods with comprehensive authenticity & care certificates.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Humanized Reviews Section -->
+    <section class="reviews-section reveal" id="reviews">
+        <div class="section-header">
+            <p class="subtitle">Real Experiences</p>
+            <h2>What Our Clients Say</h2>
+            <p>Unfiltered stories from patrons around the world.</p>
+        </div>
+
+        <div class="reviews-grid">
+            <!-- Review 1 -->
+            <div class="review-card glass-card">
+                <div class="review-card-top">
+                    <div class="reviewer-profile">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop" alt="Sophia Lin" class="reviewer-avatar">
+                        <div>
+                            <strong>Sophia Lin</strong>
+                            <span class="reviewer-location">London, UK</span>
+                        </div>
+                    </div>
+                    <span class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified Buyer</span>
+                </div>
+
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+
+                <p class="review-text">"I was honestly nervous buying leather online without feeling it first. But when the package arrived three days later, the smell of genuine Italian leather filled the room. Fits my 15" laptop effortlessly, and six months in, the leather is aging into a gorgeous patina."</p>
+
+                <div class="purchased-tag">
+                    <i class="fa-solid fa-bag-shopping"></i> Purchased: <span>The Royal Leather Tote</span>
+                </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="review-card glass-card">
+                <div class="review-card-top">
+                    <div class="reviewer-profile">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop" alt="David Miller" class="reviewer-avatar">
+                        <div>
+                            <strong>David Miller</strong>
+                            <span class="reviewer-location">Toronto, Canada</span>
+                        </div>
+                    </div>
+                    <span class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified Buyer</span>
+                </div>
+
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+
+                <p class="review-text">"Placed my order directly over WhatsApp while sitting at my desk—super quick response from the support team. The chronograph has a solid, substantial weight on the wrist, and the sapphire glass hasn't picked up a single scratch despite daily office wear."</p>
+
+                <div class="purchased-tag">
+                    <i class="fa-solid fa-bag-shopping"></i> Purchased: <span>Monarch Chronograph</span>
+                </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="review-card glass-card">
+                <div class="review-card-top">
+                    <div class="reviewer-profile">
+                        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=200&auto=format&fit=crop" alt="Priya Sharma" class="reviewer-avatar">
+                        <div>
+                            <strong>Priya Sharma</strong>
+                            <span class="reviewer-location">Bengaluru, India</span>
+                        </div>
+                    </div>
+                    <span class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified Buyer</span>
+                </div>
+
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+
+                <p class="review-text">"Gifted these frames to my partner for his birthday. The gift packaging felt like a luxury event in itself. The frames are light, don't pinch behind the ears, and look sharp in direct sunlight."</p>
+
+                <div class="purchased-tag">
+                    <i class="fa-solid fa-bag-shopping"></i> Purchased: <span>Azure Aviator Frames</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. FAQ Accordion Section -->
+    <section class="faq-section reveal" id="faq">
+        <div class="glass-container">
+            <div class="section-header">
+                <p class="subtitle">Information & Support</p>
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <button class="faq-question"><span>How do I place an order on Lorenza?</span> <i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="faq-answer"><p>Simply click "Add to Bag" on any catalog item. Our automated system directly connects you to our private WhatsApp VIP Order Concierge with pre-filled item specifications.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question"><span>Are all items 100% authentic?</span> <i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="faq-answer"><p>Yes. Every piece is sourced directly from artisan workshops and comes with a serial-numbered certificate of authenticity.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question"><span>What is your global express shipping timeline?</span> <i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="faq-answer"><p>We offer complimentary express shipping on orders over $150. Typical international delivery time spans 2 to 5 business days via DHL Express.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question"><span>How does the Admin Management Portal work?</span> <i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="faq-answer"><p>Click the "Admin" button in the navigation header, log in with authorized credentials, and manage live inventory, product photos, pricing, and stock status in real-time.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Services Section -->
+    <section class="services-section reveal" id="services">
+        <div class="service-box">
+            <i class="fa-solid fa-truck-fast"></i>
+            <h3>Express Delivery</h3>
+            <p>Complimentary global shipping on all orders over $150.</p>
+        </div>
+        <div class="service-box">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h3>Authenticity Guaranteed</h3>
+            <p>100% verified authentic goods sourced directly from artisan ateliers.</p>
+        </div>
+        <div class="service-box">
+            <i class="fa-solid fa-headset"></i>
+            <h3>VIP Support</h3>
+            <p>Dedicated 24/7 concierge service for personalized style consultations.</p>
+        </div>
+    </section>
+
+    <!-- 7. Newsletter Section -->
+    <section class="newsletter-section reveal" id="contact">
+        <div class="newsletter-card">
+            <h2>Join the Lorenza Club</h2>
+            <p>Subscribe to receive private invitations to new drops and private sales.</p>
+            <form class="newsletter-form" onsubmit="event.preventDefault();">
+                <input type="email" placeholder="Enter your email address..." required aria-label="Email address">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-bar">
+        <div class="footer-brand">
+            <h4>Lorenza</h4>
+            <p>© 2026 Lorenza. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+            <a href="https://www.lorenza.com" target="_blank"><i class="fa-solid fa-globe"></i> www.lorenza.com</a>
+            <a href="https://instagram.com/lorenzaa.in" target="_blank"><i class="fa-brands fa-instagram"></i> @lorenzaa.in</a>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast-notification">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span id="toast-msg">Opening WhatsApp...</span>
+    </div>
+
+    <!-- ADMIN LOGIN MODAL -->
+    <div class="modal-overlay" id="login-modal">
+        <div class="modal-card">
+            <button class="modal-close" id="close-login-btn"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-header">
+                <i class="fa-solid fa-shield-halved modal-icon"></i>
+                <h2>Admin Verification</h2>
+                <p>Enter high-security credentials to access Lorenza portal.</p>
+            </div>
+            <form id="admin-login-form">
+                <div class="form-group">
+                    <label for="admin-email">Admin Email</label>
+                    <input type="email" id="admin-email" placeholder="admin@lorenza.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="admin-pass">Security Password</label>
+                    <input type="password" id="admin-pass" placeholder="••••••••••••" required>
+                </div>
+                <p class="error-msg" id="login-error">Incorrect credentials. Please try again.</p>
+                <button type="submit" class="btn btn-primary full-width">Verify & Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ADVANCED ADMIN DASHBOARD MODAL -->
+    <div class="modal-overlay" id="admin-modal">
+        <div class="modal-card modal-dashboard">
+            <div class="dash-top-bar">
+                <div class="dash-title">
+                    <i class="fa-solid fa-sliders"></i>
+                    <div>
+                        <h2>Lorenza Control Center</h2>
+                        <p>Manage inventory, upload photos, and update catalog in real-time.</p>
+                    </div>
+                </div>
+                <button class="btn btn-secondary btn-sm" id="admin-logout-btn"><i class="fa-solid fa-right-from-bracket"></i> Logout</button>
+            </div>
+
+            <!-- Stats Summary -->
+            <div class="admin-stats-grid">
+                <div class="stat-card">
+                    <i class="fa-solid fa-box-archive"></i>
+                    <div><span class="stat-value" id="stat-total-products">0</span><span class="stat-label">Total Items</span></div>
+                </div>
+                <div class="stat-card">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <div><span class="stat-value" id="stat-total-value">$0.00</span><span class="stat-label">Catalog Value</span></div>
+                </div>
+                <div class="stat-card">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <div><span class="stat-value" id="stat-instock-count">0</span><span class="stat-label">In Stock</span></div>
+                </div>
+            </div>
+
+            <!-- Navigation Tabs -->
+            <div class="admin-tabs">
+                <button class="tab-btn active" id="tab-btn-list"><i class="fa-solid fa-list"></i> Catalog Inventory</button>
+                <button class="tab-btn" id="tab-btn-add"><i class="fa-solid fa-plus"></i> <span id="add-tab-title">Add New Product</span></button>
+            </div>
+
+            <!-- TAB 1: Catalog Management Table -->
+            <div class="tab-content active" id="tab-content-list">
+                <div class="table-actions">
+                    <div class="search-input-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="admin-search-input" placeholder="Search catalog by name...">
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>Photo</th>
+                                <th>Title</th>
+                                <th>Category</th>
+                                <th>Price</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="admin-table-body"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- TAB 2: Add/Edit Product Form -->
+            <div class="tab-content" id="tab-content-add">
+                <form id="add-product-form" class="admin-form">
+                    <input type="hidden" id="edit-prod-id" value="">
+                    
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="prod-title">Product Title</label>
+                            <input type="text" id="prod-title" placeholder="e.g. Royal Leather Tote" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="prod-price">Price ($)</label>
+                            <input type="number" step="0.01" id="prod-price" placeholder="340.00" required>
+                        </div>
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="prod-category">Category</label>
+                            <select id="prod-category" class="form-select" required>
+                                <option value="Bags">Bags & Leather</option>
+                                <option value="Watches">Timepieces & Watches</option>
+                                <option value="Audio">Audio & Studio</option>
+                                <option value="Eyewear">Eyewear & Frames</option>
+                                <option value="Accessories">Accessories</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="prod-badge">Badge Tag (Optional)</label>
+                            <input type="text" id="prod-badge" placeholder="e.g. Bestseller, Limited, New">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Product Image</label>
+                        <div class="image-upload-wrapper">
+                            <div class="file-dropzone">
+                                <i class="fa-solid fa-cloud-arrow-up"></i>
+                                <span>Choose Image File</span>
+                                <input type="file" id="prod-file-input" accept="image/*">
+                            </div>
+                            <span class="upload-or">OR</span>
+                            <input type="url" id="prod-image-url" placeholder="Paste Direct Image URL (https://...)" class="url-fallback-input">
+                        </div>
+                        <div id="image-preview-container" class="preview-box hidden">
+                            <img id="image-preview" src="" alt="Preview">
+                            <span class="preview-filename" id="preview-filename">Selected photo</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="prod-desc">Description (Optional)</label>
+                        <textarea id="prod-desc" rows="3" placeholder="Brief details regarding materials, sizing, or origins..."></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="prod-instock" checked>
+                            <span class="slider"></span>
+                        </label>
+                        <span>Item is In Stock & Available for Order</span>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary" id="cancel-edit-btn">Cancel</button>
+                        <button type="submit" class="btn btn-primary" id="save-prod-btn"><i class="fa-solid fa-floppy-disk"></i> Save Product</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
