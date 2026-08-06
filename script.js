@@ -160,7 +160,7 @@ function renderPublicCatalog(products) {
                     <h3>${item.title}</h3>
                     <p class="price">${formattedPrice}</p>
                     <button class="add-to-cart-btn" data-title="${item.title}" data-price="${formattedPrice}">
-                        <i class="fa-solid fa-bag-shopping"></i> Add to Bag
+                        <i class="fa-solid fa-bag-shopping"></i> Place Order
                     </button>
                 </div>
             </div>
